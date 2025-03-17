@@ -3,7 +3,9 @@ using TradeRiskClassifier.Models;
 
 namespace TradeRiskClassifier.RiskCategories
 {
-    // Categoria HIGHRISK: Operações com valor superior a 1.000.000, com cliente do setor Privado (Private).
+    /// <summary>
+    /// Categoria HIGHRISK: Operações com valor superior a 1.000.000, cujo cliente é do setor Privado (Private).
+    /// </summary>
     public class HighRiskCategory : IRiskCategory
     {
         public string CategoryName => "HIGHRISK";
